@@ -1,0 +1,24 @@
+/*Write a program to find the Nth term of the Fibonnaci series.*/
+#include<stdio.h>
+int main()
+{
+int n;
+int a=0;
+int b=1;
+int c=1;
+// Input a number to find fibonacii series
+printf("Enter how many terms of fibonacii series you want see :");
+scanf("%d",&n);
+printf("%d\t",a);
+// iterate through n terms
+for(int i=1;i<n;i++){
+    c=a+b;
+    a=b;
+    b=c;
+printf("%d\t",c);
+}
+
+
+
+return 0;
+}
