@@ -1,0 +1,31 @@
+/*Write a program to check whether a given number is there in the Fibonacci
+series or not.*/
+#include<stdio.h>
+int main()
+{
+int n;
+int a=0;
+int b=1;
+int c=1;
+// Input a number from user
+printf("Enter the number to check number is fibonacii or not :");
+scanf("%d",&n);
+// iterate through n terms
+for(int i=1;i<=n;i++){
+    c=a+b;
+    a=b;
+    b=c;
+    if(c==n){
+        printf("Yes %d is a fibonacii number\n",n);
+        break;
+        }
+}
+if(c!=n){
+    printf("Sorry %d is not a fibonacii number",n);
+}
+
+
+
+
+return 0;
+}
