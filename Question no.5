@@ -1,0 +1,26 @@
+/*Write a program to check whether two given numbers are co-prime
+numbers or not*/
+#include<stdio.h>
+int main()
+{
+int a;
+int b;
+int l;
+printf("Enter two numbers :");
+scanf("%d %d",&a,&b);
+for(l=a>b?b:a;l>=1;l--){
+    if(a%l==0 && b%l==0){
+        if(l==1){
+            printf("co-prime number");
+        }
+        else{
+            printf("not a co-prime number");
+            break;
+        }
+    }
+}
+
+
+
+return 0;
+}
