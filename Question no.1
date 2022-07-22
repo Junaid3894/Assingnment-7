@@ -6,17 +6,19 @@ int n;
 int a=0;
 int b=1;
 int c=1;
-// Input a number to find fibonacii series
-printf("Enter how many terms of fibonacii series you want see :");
+// Input a number to find term of fibonacii series
+printf("Enter the nth term which you want to see :");
 scanf("%d",&n);
-printf("%d\t",a);
 // iterate through n terms
 for(int i=1;i<n;i++){
     c=a+b;
     a=b;
     b=c;
-printf("%d\t",c);
+    if(i==n){
+        break;
+    }
 }
+printf("%d\t",c);
 
 
 
