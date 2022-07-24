@@ -1,0 +1,27 @@
+/*Write a program to check whether a given number is an Armstrong number
+or not*/
+#include<stdio.h>
+int main()
+{
+   int n;// input numbers from user
+   int rem=0;
+   int cube=0;
+   int pow=0;
+   printf("Enter the number to find Armstrong number :");
+   scanf("%d",&n);
+   int n1=n;
+   // start loop from 1 and increment it by 1 till n=0
+   for(int i=1;n1!=0;i++){
+       rem=n1%10;// finding the last value
+       cube=rem*rem*rem;
+       pow+=cube;
+       n1/=10;// decrement the last one digits in each iteration
+       }
+if(n==pow){
+    printf("Yes this is Armstrong number ");}
+else{
+    printf("sorry ");
+}   
+
+return 0;
+}
